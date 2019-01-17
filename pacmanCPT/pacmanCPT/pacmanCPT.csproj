@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{331CC7DB-5E35-4584-B2F7-C8593F570A08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pacmanCPT</RootNamespace>
+    <AssemblyName>pacmanCPT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOverLevel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOverLevel2.Designer.cs">
+      <DependentUpon>GameOverLevel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="introGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="introGame.Designer.cs">
+      <DependentUpon>introGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacman Game %28level 2%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacman Game %28level 2%29.Designer.cs">
+      <DependentUpon>Pacman Game %28level 2%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOverLevel2.resx">
+      <DependentUpon>GameOverLevel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="introGame.resx">
+      <DependentUpon>introGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacman Game %28level 2%29.resx">
+      <DependentUpon>Pacman Game %28level 2%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cccc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coint2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink_guy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_guy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_guy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3dfe7e1522bf0d649cf89082acd0b1e9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost-gif-png-3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dk_coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dk_coin1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CandidHorribleAmazontreeboa-max-1mb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PACMANleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PACMANdown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PACMANnleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PACMANright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MrPacmanUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PACMANdown1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PACMANleft1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PACMANnleft1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croped.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croped1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjk..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dddd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dddd1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3dfe7e1522bf0d649cf89082acd0b1e91.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost-gif-png-31.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RNSD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\435345.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepe-the-frog-meme-gif-t-shirt-meme-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-clip-art-pepe-the-frog-gif-telegram-sticker-038-from-collection-Пепе-5b6835ca7fd731.5695651415335561705237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3dfe7e1522bf0d649cf89082acd0b1e92.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
